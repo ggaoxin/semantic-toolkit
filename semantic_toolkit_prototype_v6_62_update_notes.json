@@ -1,0 +1,24 @@
+{
+  "version": "V6.62",
+  "baseline": "V6.61",
+  "file": "semantic_toolkit_prototype_v6_62.html",
+  "scope": "Correct the English abstract move-recognition page without changing the Chinese abstract move-recognition page or other tool pages.",
+  "changes": [
+    "Replaced the English capability-area selectors that reused Chinese CSS classes with English-only class names, preventing English page styles from changing Chinese page content.",
+    "Explicitly hides Chinese-only persistent panels while the English abstract move-recognition page is active, eliminating duplicated capability and task-status sections.",
+    "Kept the Chinese abstract move-recognition page at its V6.59/V6.60 visual state, with one capability panel and one workflow/status area.",
+    "Matched the English request-parameter note cards (input constraints, common exceptions, prototype note) to the exact local typography and spacing used by the Chinese page: 11px body text, 12px headings, 11px/12px padding, 9px radius, 10px grid gap, and 12px top margin.",
+    "Preserved the English validation, task execution, structured result, copy, and JSON download behavior introduced in V6.61."
+  ],
+  "validation": {
+    "javascript_syntax_checked": true,
+    "script_count": 35,
+    "browser_runtime_verified": true,
+    "checks": [
+      "English page: English capability panel visible and Chinese capability panel hidden.",
+      "Chinese page: Chinese capability panel visible and English capability panel hidden.",
+      "English and Chinese request-parameter note cards have matching computed font size, line height, padding, and border radius.",
+      "No page errors were observed during Chromium switching tests."
+    ]
+  }
+}

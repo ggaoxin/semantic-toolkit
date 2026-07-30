@@ -1,0 +1,21 @@
+{
+  "current_baseline": "V6.62",
+  "baseline_source": "V6.61",
+  "primary_file": "semantic_toolkit_prototype_v6_62.html",
+  "focus_pages": [
+    "中文摘要语步识别",
+    "英文摘要语步识别"
+  ],
+  "implemented_fixes": {
+    "english_styles_isolated_from_chinese": true,
+    "duplicate_chinese_panels_hidden_on_english_page": true,
+    "english_request_note_layout_matches_chinese": true,
+    "english_v661_functionality_preserved": true,
+    "other_pages_unchanged": true
+  },
+  "important_constraints": [
+    "Future edits should use V6.62 unless the user explicitly selects another baseline.",
+    "Do not reuse Chinese capability-panel classes for English page-specific elements.",
+    "Keep the request-parameter note cards on Chinese and English move-recognition pages visually identical."
+  ]
+}
